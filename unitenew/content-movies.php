@@ -21,7 +21,18 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+	
+			
+				<?php the_content();?> 
+			
+
+			<?php
+
+			//правка шаблона
+
+			echo '<div class="row"><div class="col-md-6"><span class="label label-default"><i class="glyphicon glyphicon-calendar"></i> Дата выхода:</span> '.$post->releasedate. '</div><div class="col-md-6"><span class="label label-default"><i class="glyphicon glyphicon-usd"></i> Стоимость сеанса:</span> ' . $post->movieprice. '</div></div>'; //выводим дату выхода и стоимость сеанса ?>
+		
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'unite' ),
@@ -60,7 +71,7 @@
 
 		 
 
-		echo '</br>Дата выхода: '.$post->releasedate. '</br>Стоимость сеанса: ' . $post->movieprice. '</br>'; //выводим дату выхода и стоимость сеанса
+	
 
 
 

@@ -2,4 +2,12 @@
  * Theme Name: unitenew
  * Template: unite
  */
+
+
+
+
 @import url('../unite/style.css');
+
+div.col-md-6 .label{
+	color: white;
+}
